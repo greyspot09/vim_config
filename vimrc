@@ -84,8 +84,8 @@ nmap <D-6> :tabn6<CR>
 nmap <D-e> :CtrlPMRUFiles<CR>
 
 " Toggle NERDTree sidebar
-" nmap <C-n> :NERDTreeToggle<CR>
-nmap <D-0> :NERDTreeToggle<CR>
+nmap <C-n> :NERDTreeToggle<CR>
+"nmap <D-0> :NERDTreeToggle<CR>
 
 " List all tags in the current buffer
 nmap <C-r> :CtrlPBufTag<CR>
