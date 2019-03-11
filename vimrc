@@ -12,7 +12,7 @@ syntax on       " Enable syntax highlighting
 "--------------------UI tweaks--------------------
 " Some tweaks of the atom-dark theme
 set guifont=Fira_Code:h12        " Monospaced font with programming ligatures
-set macligatures        " Display programming ligatures
+"set macligatures        " Display programming ligatures
 set linespace=6        " Set the line height
 set number              " Show line numbers
 set cursorline          " Highlight current line 
@@ -84,12 +84,17 @@ nmap <D-6> :tabn6<CR>
 nmap <D-e> :CtrlPMRUFiles<CR>
 
 " Toggle NERDTree sidebar
-" nmap <C-n> :NERDTreeToggle<CR>
-nmap <D-0> :NERDTreeToggle<CR>
+nmap <C-n> :NERDTreeToggle<CR>
+"nmap <D-0> :NERDTreeToggle<CR>
 
 " List all tags in the current buffer
 nmap <C-r> :CtrlPBufTag<CR>
 
+
+"q：退出
+nnoremap <silent><buffer> q  :pclose!<CR>:quit<CR>
+"Ctrl-x：保存并退出
+nnoremap <C-x> :x<CR>
 
 "--------------------Autocmd--------------------
 "echom "autosourcing"
